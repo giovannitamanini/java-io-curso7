@@ -7,4 +7,5 @@ src/META-INF
 element-list
 *.css
 *.swp
-
+java-io/.idea/
+java-io/java-io.iml

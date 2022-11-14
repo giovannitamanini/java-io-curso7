@@ -10,7 +10,7 @@ public class TesteCopiarArquivo {
         Reader isr = new InputStreamReader(fis);
         BufferedReader br = new BufferedReader(isr);
 
-        OutputStream fos = new FileOutputStream("lorem2.txt");
+        OutputStream fos = System.out;
         Writer osw = new OutputStreamWriter(fos);
         BufferedWriter bw = new BufferedWriter(osw);
 
@@ -19,6 +19,7 @@ public class TesteCopiarArquivo {
         while (linha != null && !linha.isEmpty()) {
             bw.write(linha);
             bw.newLine();
+            bw.flush();
             linha = br.readLine();
         }
 
